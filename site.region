@@ -15,6 +15,9 @@
     })();</script>
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}" sqs-controller="SyncHeader, AddScrollingClass, HeaderScroll, SearchToggle, BodyMinHeight">
+
+
+  <div style="width: 500px; height: 500px; background-color: red; position:absolute; z-index: 5000;"></div>
     <div class="nav-close-overlay">
 
     </div>
@@ -67,10 +70,10 @@
             {.section logoImageUrl}
               <div class="logo-image branding" data-content-field="site-title">
                 <a href="/"><img src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a>
-                {.if website.siteTagLine}brrrrrr<div class="site-tagline-logo">{siteTagLine}brrrrrrr</div>{.end}
+                {.if website.siteTagLine}<div class="site-tagline-logo">{siteTagLine}</div>{.end}
               </div>
             {.or}
-              <div class="site-title branding" data-content-field="site-title"><a href="/"><span class="site-title-text">{siteTitle}brrrrrrrrr</span>{.section siteTagLine} <span class="site-tagline">{@}</span>{.end}</a></div>
+              <div class="site-title branding" data-content-field="site-title"><a href="/"><span class="site-title-text">{siteTitle}</span>{.section siteTagLine} <span class="site-tagline">{@}</span>{.end}</a></div>
             {.end}
           {.end}
           </div>
